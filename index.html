@@ -8,9 +8,11 @@
 <script src="./index.js"></script>
 <script>
     const temp =
-        `(combine "abc" (add 23 sub(3 add(122 43))))`
+        `(combine "abc" (add 23 (sub 3 (add 122 43))))`
     const tokens = tokenizer(temp)
-    console.log(tokens)
+    const ast = parser(tokens)
+    const newAst = transform(ast)
+    console.log(codeGenerator(newAst)) // combine("abc", add(23, sub(3, add(122, 43))));
 </script>
 </body>
 </html>

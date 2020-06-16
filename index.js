@@ -238,3 +238,11 @@ function compile(input) {
     let newAst = transform(ast)
     return codeGenerator(newAst)
 }
+
+module.exports = {
+    tokenizer,
+    parser,
+    traverser,
+    transform,
+    compile
+}

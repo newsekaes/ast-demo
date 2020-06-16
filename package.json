@@ -1,0 +1,17 @@
+{
+  "name": "ast-demo",
+  "version": "0.0.1",
+  "description": "a demo for ast",
+  "main": "index.js",
+  "scripts": {
+    "start-debug": "node --inspect debugServer.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/newsekaes/ast-demo.git"
+  },
+  "keywords": ["javascript", "ast"],
+  "author": "newsekaes",
+  "license": "MIT",
+  "dependencies": {}
+}
